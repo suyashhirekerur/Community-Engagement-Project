@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSC</title>
-    <!-- Use Inter font for a modern look -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            /* Retaining original background color */
             background-color: rgb(197, 147, 197);
             text-align: center;
-            font-family: 'Inter', sans-serif; /* Applied new font */
+            font-family: 'Inter', sans-serif; 
         }
 
-        /* Container to center the service boxes */
         .links-container {
             width: fit-content;
             margin: 0 auto;
@@ -23,20 +21,14 @@
         }
 
         a {
-            /* General styling for the service boxes */
-            font-size: 26pt; /* Font size remains at 26pt */
+            font-size: 26pt;
             display: inline-block;
             text-decoration: none;
-            font-weight: 700; 
-            
-            /* Box dimensions increased for better fit and spacing */
-            width: 340px; /* Increased width */
-            height: 120px; /* Increased height */
-            
-            /* Vertical padding adjustment to center text */
-            padding: 20px 15px 10px 10px; 
-            
-            margin: 20px; /* Increased margin for better separation */
+            font-weight: 700;             
+            width: 340px; 
+            height: 120px; 
+            padding: 20px 15px 10px 10px;
+            margin: 20px; 
             box-sizing: border-box; 
             position: relative; 
             vertical-align: top;
@@ -59,23 +51,20 @@
         }
 
         .service-icon {
-            /* Style for all service icons inside the links */
             position: absolute;
             left: 0;
             top: 0;
-            height: 100%; /* Match the height of the anchor box */
+            height: 100%; 
             width: auto; 
             object-fit: contain; 
-            padding: 10px; /* Slightly more padding for the icon area */
+            padding: 10px; 
             box-sizing: border-box;
         }
-
-        /* Specific Link Styles */
         
         .government {
             background-color: rgb(85, 107, 47);
             color: white; 
-            margin-right: 80px; /* Adjusted horizontal spacing */
+            margin-right: 80px; 
         }
 
         .education {
@@ -96,9 +85,7 @@
             margin-top: 60pt; 
         }
 
-        /* Adjust the text position to account for the image */
         .government, .education, .health, .financial {
-            /* Increased left padding to 130px to make sure the text starts well past the icon */
             padding-left: 130px; 
             text-align: left;
         }
@@ -108,7 +95,6 @@
 <body>
     <h1><span>CSC</span></h1>
     <div class="links-container">
-        <!-- First Row -->
         <a class="government" href="./government.html">
             <img class="service-icon" src="./src/government.png" alt="Government Icon">
             Government <br> Services
@@ -118,7 +104,6 @@
             Educational <br> Services
         </a>
         <br>
-        <!-- Second Row -->
         <a class="health" href="./health.html ">
             <img class="service-icon" src="./src/health.png" alt="Health Icon">
             Health <br> Services
@@ -131,3 +116,4 @@
 </body>
 
 </html>
+
