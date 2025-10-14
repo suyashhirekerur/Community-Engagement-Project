@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html lang="marathi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Services - CSC</title>
+    <title>Financial Inclusion Schemes - CSC</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setting a clean, modern font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Soft blue-grey background */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#10b981', /* Emerald/Teal color */
+                        'secondary-indigo': '#4f46e5', /* Indigo color */
+                        'accent-yellow': '#facc15',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <a href="https://enps.nps-proteantech.in/eNPS/ApySubRegistration.html">Atal Pension Yojana (APY)</a>
-    <a href="https://www.pmjdy.gov.in/">Pradhan Mantri Jan Dhan Yojana (PMJDY)</a>
+<body class="min-h-screen p-4 sm:p-10 flex flex-col items-center">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl mb-12 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-800 sm:text-5xl tracking-tight">
+            Financial Inclusion Services
+        </h1>
+        <p class="mt-3 text-lg text-gray-600">
+            Key Government Schemes for Financial Empowerment
+        </p>
+    </header>
+
+    <!-- Main Content Grid for Cards -->
+    <main class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Atal Pension Yojana (APY) Card -->
+        <div class="bg-white shadow-2xl rounded-xl p-8 border-t-8 border-primary-teal hover:shadow-3xl transition duration-500 transform hover:-translate-y-1">
+            
+            <!-- Icon for Pension/Retirement -->
+            <div class="text-primary-teal mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote"><rect width="20" height="12" x="2" y="6" rx="3"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+                <h2 class="ml-3 text-3xl font-bold text-gray-800">
+                    Atal Pension Yojana (APY)
+                </h2>
+            </div>
+            
+            <!-- Scheme Description -->
+            <p class="text-gray-600 mb-6 mt-4 leading-relaxed">
+                APY is a social security scheme focused on the unorganized sector. It guarantees a minimum monthly pension to the subscriber after the age of $60$, ranging from $₹1,000$ to $₹5,000$, depending on the contribution.
+            </p>
+
+            <!-- Key Features List -->
+            <ul class="list-disc list-inside text-sm text-gray-700 mb-8 space-y-2 pl-2">
+                <li>Guaranteed minimum pension post-60.</li>
+                <li>Government co-contribution for eligible subscribers.</li>
+                <li>Focus on retirement savings for low-income workers.</li>
+            </ul>
+
+            <!-- Link Button -->
+            <a href="https://enps.nps-proteantech.in/eNPS/ApySubRegistration.html" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-block w-full text-center bg-primary-teal text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-[1.02] active:scale-100 focus:outline-none focus:ring-4 focus:ring-primary-teal focus:ring-opacity-50">
+                Enroll for APY
+            </a>
+        </div>
+        <!-- End APY Card -->
+
+        <!-- Pradhan Mantri Jan Dhan Yojana (PMJDY) Card -->
+        <div class="bg-white shadow-2xl rounded-xl p-8 border-t-8 border-secondary-indigo hover:shadow-3xl transition duration-500 transform hover:-translate-y-1">
+            
+            <!-- Icon for Banking/Financial Access -->
+            <div class="text-secondary-indigo mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M10 12h12v5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12"/></svg>
+                <h2 class="ml-3 text-3xl font-bold text-gray-800">
+                    Pradhan Mantri Jan Dhan Yojana (PMJDY)
+                </h2>
+            </div>
+            
+            <!-- Scheme Description -->
+            <p class="text-gray-600 mb-6 mt-4 leading-relaxed">
+                PMJDY is a national mission for financial inclusion to ensure access to financial services, namely, Basic Savings Bank Deposit Account (BSBDA), remittance, credit, insurance, and pension in an affordable manner.
+            </p>
+            
+            <!-- Key Features List -->
+            <ul class="list-disc list-inside text-sm text-gray-700 mb-8 space-y-2 pl-2">
+                <li>Zero balance bank accounts.</li>
+                <li>Rupay Debit Card and accidental insurance cover.</li>
+                <li>Overdraft facility available after $6$ months of satisfactory operation.</li>
+            </ul>
+
+            <!-- Link Button -->
+            <a href="https://www.pmjdy.gov.in/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-block w-full text-center bg-secondary-indigo text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.02] active:scale-100 focus:outline-none focus:ring-4 focus:ring-secondary-indigo focus:ring-opacity-50">
+                Learn More About PMJDY
+            </a>
+        </div>
+        <!-- End PMJDY Card -->
+
+    </main>
+
+    <!-- Footer for Visual Separation -->
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Financial Services Initiative. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
