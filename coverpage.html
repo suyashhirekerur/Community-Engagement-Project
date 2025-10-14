@@ -5,60 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSC</title>
+    <!-- Use Inter font for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
+            /* Retaining original background color */
             background-color: rgb(197, 147, 197);
+            text-align: center;
+            font-family: 'Inter', sans-serif; /* Applied new font */
+        }
+
+        /* Container to center the service boxes */
+        .links-container {
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 50px;
         }
 
         a {
-            font-size: 30pt;
-            gap: 100px;
-            text-align: center;
+            /* General styling for the service boxes */
+            font-size: 26pt; /* Font size remains at 26pt */
             display: inline-block;
-            color: darkgreen;
+            text-decoration: none;
+            font-weight: 700; 
+            
+            /* Box dimensions increased for better fit and spacing */
+            width: 340px; /* Increased width */
+            height: 120px; /* Increased height */
+            
+            /* Vertical padding adjustment to center text */
+            padding: 20px 15px 10px 10px; 
+            
+            margin: 20px; /* Increased margin for better separation */
+            box-sizing: border-box; 
+            position: relative; 
+            vertical-align: top;
+            line-height: 1.2; 
+            border-radius: 12px; 
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        a:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
         }
 
         h1 {
             font-size: 90px;
             text-align: center;
             color: aqua;
+            margin-bottom: 50px;
         }
 
+        .service-icon {
+            /* Style for all service icons inside the links */
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%; /* Match the height of the anchor box */
+            width: auto; 
+            object-fit: contain; 
+            padding: 10px; /* Slightly more padding for the icon area */
+            box-sizing: border-box;
+        }
+
+        /* Specific Link Styles */
+        
         .government {
-            background-color: rgb(45, 164, 45);
-            margin-left: 300pt;
-            color: navy;
+            background-color: rgb(85, 107, 47);
+            color: white; 
+            margin-right: 80px; /* Adjusted horizontal spacing */
         }
 
         .education {
             background-color: rgb(28, 112, 229);
-            margin-left: 175pt;
-            color: navy;
+            color: white; 
         }
 
         .health {
             background-color: rgb(235, 109, 109);
-            margin-top: 85pt;
-            margin-left: 325pt;
             color: darkred;
+            margin-top: 60pt; 
+            margin-right: 80px; 
         }
 
         .financial {
             background-color: rgb(100, 209, 100);
-            color: rgb(27, 82, 27);
-            margin-top: 85pt;
-            margin-left: 215pt;
+            color: rgb(1, 37, 1);
+            margin-top: 60pt; 
+        }
+
+        /* Adjust the text position to account for the image */
+        .government, .education, .health, .financial {
+            /* Increased left padding to 130px to make sure the text starts well past the icon */
+            padding-left: 130px; 
+            text-align: left;
         }
     </style>
 </head>
 
 <body>
     <h1><span>CSC</span></h1>
-    <a class="government" type="box" href="./government.html">Government <br> Services</a>
-    <a class="education" type="box" href="./education.html">Educational <br> Services</a>
-    <br>
-    <a class="health" type="box" href="./health.html ">Health <br> Services</a>
-    <a class="financial" type="box" href="./financial.html">Financial <br> Services</a>
+    <div class="links-container">
+        <!-- First Row -->
+        <a class="government" href="./government.html">
+            <img class="service-icon" src="./src/government.png" alt="Government Icon">
+            Government <br> Services
+        </a>
+        <a class="education" href="./education.html">
+            <img class="service-icon" src="./src/educational.png" alt="Educational Icon">
+            Educational <br> Services
+        </a>
+        <br>
+        <!-- Second Row -->
+        <a class="health" href="./health.html ">
+            <img class="service-icon" src="./src/health.png" alt="Health Icon">
+            Health <br> Services
+        </a>
+        <a class="financial" href="./financial.html">
+            <img class="service-icon" src="./src/financial.png" alt="Financial Icon">
+            Financial <br> Services
+        </a>
+    </div>
 </body>
 
 </html>
