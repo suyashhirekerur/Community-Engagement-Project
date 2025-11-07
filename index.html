@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Service Centre (CSC) Services</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script type="module">
+        import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@latest';
+        createIcons({ icons });
+    </script>
+    <style>
+        /* Custom Tailwind Configuration (Setting Inter font and responsive colors) */
+        :root {
+            --color-primary: #4f46e5;
+            --color-secondary: #007bff;
+        }
+
+        /* Applying the light lavender background color from the original request */
+        body {
+            background-color: rgb(197, 147, 197);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8">
+
+    <!-- Header Section mimicking the style of the second image -->
+    <header class="text-center mb-12 mt-4 max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-indigo-800 mb-4 tracking-tight">
+            Empowering Digital India
+        </h1>
+        <p class="text-xl text-gray-700 font-medium">
+            Access Key Government and Citizen Services Online
+        </p>
+    </header>
+
+    <!-- Cards Container -->
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
+
+        <!-- Card 1: Government Services (Green/Dark Olive from original) -->
+        <a href="./government.html" class="service-card block bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-8">
+            <div class="flex items-center space-x-5">
+                <!-- Icon with color accent mimicking the card header -->
+                <div class="flex-shrink-0 p-4 rounded-xl bg-gray-700 text-white">
+                    <i data-lucide="gavel" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Government Services</h2>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4 mb-6">
+                Access key governmental and citizen-centric services like application submission, documentation, and certifications.
+            </p>
+            <div class="w-full">
+                <button class="w-full py-3 rounded-xl font-semibold text-lg text-white bg-gray-700 hover:bg-gray-800 transition duration-150 shadow-md">
+                    Proceed to Services
+                </button>
+            </div>
+        </a>
+
+        <!-- Card 2: Educational Services (Blue from original) -->
+        <a href="./education.html" class="service-card block bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-8">
+            <div class="flex items-center space-x-5">
+                <!-- Icon with color accent mimicking the card header -->
+                <div class="flex-shrink-0 p-4 rounded-xl bg-blue-600 text-white">
+                    <i data-lucide="book-open-text" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Educational Services</h2>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4 mb-6">
+                Explore learning resources, certificate verification, skill development programs, and academic consultations for all ages.
+            </p>
+            <div class="w-full">
+                <button class="w-full py-3 rounded-xl font-semibold text-lg text-white bg-blue-600 hover:bg-blue-700 transition duration-150 shadow-md">
+                    Explore Learning
+                </button>
+            </div>
+        </a>
+
+        <!-- Card 3: Health Services (Red/Pink from original) -->
+        <a href="./health.html" class="service-card block bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-8">
+            <div class="flex items-center space-x-5">
+                <!-- Icon with color accent mimicking the card header -->
+                <div class="flex-shrink-0 p-4 rounded-xl bg-red-500 text-white">
+                    <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Health Services</h2>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4 mb-6">
+                Consult telemedicine, book local appointments, and access health awareness and insurance enrollment schemes.
+            </p>
+            <div class="w-full">
+                <button class="w-full py-3 rounded-xl font-semibold text-lg text-white bg-red-500 hover:bg-red-600 transition duration-150 shadow-md">
+                    Access Health Services
+                </button>
+            </div>
+        </a>
+
+        <!-- Card 4: Financial Services (Light Green from original) -->
+        <a href="./financial.html" class="service-card block bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-8">
+            <div class="flex items-center space-x-5">
+                <!-- Icon with color accent mimicking the card header -->
+                <div class="flex-shrink-0 p-4 rounded-xl bg-green-600 text-white">
+                    <i data-lucide="landmark" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Financial Services</h2>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-4 mb-6">
+                Secure banking, insurance, pension management, and digital payment solutions tailored for rural areas.
+            </p>
+            <div class="w-full">
+                <button class="w-full py-3 rounded-xl font-semibold text-lg text-white bg-green-600 hover:bg-green-700 transition duration-150 shadow-md">
+                    Access Financial Services
+                </button>
+            </div>
+        </a>
+
+    </main>
+</body>
+
+</html>

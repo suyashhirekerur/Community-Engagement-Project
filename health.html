@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services - CSC</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setting a clean, modern font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdfa;
+            /* Very light aqua/mint background */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-aqua': '#14b8a6', /* Teal/Aqua for health */
+                        'brand-blue': '#3b82f6', /* Blue for official platforms */
+                        'brand-violet': '#8b5cf6', /* Violet for insurance */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen p-4 sm:p-10 flex flex-col items-center">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-6xl mb-12 text-center">
+        <h1 class="text-4xl font-extrabold text-brand-aqua sm:text-5xl tracking-tight">
+            Health and Wellness Services
+        </h1>
+        <p class="mt-3 text-lg text-gray-600">
+            Digital Access to National and State Health Schemes
+        </p>
+        <hr class="mt-4 border-t-2 border-brand-aqua/30 mx-auto w-1/4">
+    </header>
+
+    <!-- Main Content Grid for Cards -->
+    <main class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ABHA Card (Digital Health ID) -->
+        <div
+            class="bg-white shadow-xl rounded-xl p-8 border-t-8 border-brand-blue hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+
+            <!-- Icon and Title -->
+            <div class="text-brand-blue mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-fingerprint">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" />
+                    <path d="M12 16a4 4 0 0 0 0-8" />
+                    <path d="M12 20a8 8 0 0 0 0-16" />
+                    <path d="M12 22a10 10 0 0 0 0-20" />
+                </svg>
+                <h2 class="ml-3 text-2xl font-bold text-gray-800">
+                    ABHA Card
+                </h2>
+            </div>
+
+            <!-- Service Description -->
+            <p class="text-gray-600 mb-6 mt-4 leading-relaxed text-sm">
+                The **Ayushman Bharat Health Account (ABHA)** is a unique **14-digit health ID** that securely links
+                your digital health records across various healthcare providers, ensuring continuity of care.
+            </p>
+
+            <!-- Link Button -->
+            <a href="http://abha.abdm.gov.in" target="_blank" rel="noopener noreferrer"
+                class="inline-block w-full text-center bg-brand-blue text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 transform hover:scale-[1.02] active:scale-100 focus:outline-none focus:ring-4 focus:ring-brand-blue focus:ring-opacity-50">
+                Create/Access ABHA ID
+            </a>
+        </div>
+
+        <!-- MJPSBY Card (State Health Insurance) -->
+        <div
+            class="bg-white shadow-xl rounded-xl p-8 border-t-8 border-brand-violet hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+
+            <!-- Icon and Title -->
+            <div class="text-brand-violet mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-heart-handshake">
+                    <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    <path d="M12 18v2" />
+                    <path d="M15 19.5v.5" />
+                    <path d="M9 19.5v.5" />
+                </svg>
+                <h2 class="ml-3 text-2xl font-bold text-gray-800">
+                    Mahatma Jotiba Phule Jan Arogya Yojana
+                </h2>
+            </div>
+
+            <!-- Service Description -->
+            <p class="text-gray-600 mb-6 mt-4 leading-relaxed text-sm">
+                This Maharashtra state scheme provides **cashless treatment** for specified diseases in empaneled
+                hospitals. It covers a wide range of surgeries and therapies for eligible families.
+            </p>
+
+            <!-- Link Button -->
+            <a href="https://www.jeevandayee.gov.in/" target="_blank" rel="noopener noreferrer"
+                class="inline-block w-full text-center bg-brand-violet text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-violet-600 transition duration-300 transform hover:scale-[1.02] active:scale-100 focus:outline-none focus:ring-4 focus:ring-brand-violet focus:ring-opacity-50">
+                Check Eligibility & Details
+            </a>
+        </div>
+
+        <!-- COWIN Card (Public Health Platform) -->
+        <div
+            class="bg-white shadow-xl rounded-xl p-8 border-t-8 border-brand-aqua hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+
+            <!-- Icon and Title -->
+            <div class="text-brand-aqua mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-syringe">
+                    <path
+                        d="m14 17 3.6-3.6c-2.43-2.44-4.53-3.8-6.13-4.4a3.81 3.81 0 0 0-2.22-1.4l-2.61.64-1.78 1.78 6.46 2.47c-.6.8-1 1.74-1.2 2.76" />
+                    <path d="M11 13 8.78 8.78" />
+                    <path d="M22 6L14 14" />
+                    <path d="M15 9l5-5" />
+                </svg>
+                <h2 class="ml-3 text-2xl font-bold text-gray-800">
+                    COWIN Portal
+                </h2>
+            </div>
+
+            <!-- Service Description -->
+            <p class="text-gray-600 mb-6 mt-4 leading-relaxed text-sm">
+                The official digital platform for **public health immunization programs**. Use this portal to register,
+                book vaccination appointments, and download your final digital vaccination certificates.
+            </p>
+
+            <!-- Link Button -->
+            <a href="https://www.cowin.gov.in/" target="_blank" rel="noopener noreferrer"
+                class="inline-block w-full text-center bg-brand-aqua text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-teal-600 transition duration-300 transform hover:scale-[1.02] active:scale-100 focus:outline-none focus:ring-4 focus:ring-brand-aqua focus:ring-opacity-50">
+                Go to COWIN
+            </a>
+        </div>
+
+
+    </main>
+
+    <!-- Footer for Visual Separation -->
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+        <p>Promoting a healthier community through digital access.</p>
+    </footer>
+
+</body>
+
+</html>
